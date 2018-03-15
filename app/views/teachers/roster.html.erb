@@ -1,0 +1,15 @@
+<div class="main">
+  <div class="container">
+    <h1><%= @teachername %>, your course roster is below.</h1>
+  </div>
+</div>
+
+<div class="CourseRoster">
+  <div class="container">
+    <% @courses.each do |course| %>
+      <div class="course">
+        <%= link_to course.name + "," + course.semester, @teachername + "/" + course.name + "/" + course.semester %>
+      </div>
+    <% end %>
+  </div>
+</div>

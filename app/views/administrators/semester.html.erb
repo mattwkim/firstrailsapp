@@ -1,0 +1,15 @@
+<div class="main">
+  <div class="container">
+    <h1>Viewing All Courses for Semester: <%= @chosensemester %></h1>
+  </div>
+</div>
+
+<div class="Administrators">
+  <div class="container">
+    <% @courseinformation.each do |coursename, enrollmentcount| %>
+      <div class="semester">
+        <p>There are <%= enrollmentcount %> students enrolled in <%= link_to coursename, @chosensemester + '/' + coursename %>
+      </div>
+    <% end %>
+  </div>
+</div>

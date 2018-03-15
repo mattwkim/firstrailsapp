@@ -1,0 +1,15 @@
+<div class="main">
+  <div class="container">
+    <h1>Welcome to the main student page!</h1>
+  </div>
+</div>
+
+<div class="Students">
+  <div class="container">
+    <% @students.each do |student| %>
+      <div class="student">
+        <%= link_to student.name, "student/" + student.name %>
+      </div>
+    <% end %>
+  </div>
+</div> 

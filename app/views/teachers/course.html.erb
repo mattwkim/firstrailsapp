@@ -1,0 +1,15 @@
+<div class="main">
+  <div class="container">
+    <h1>Viewing all students and their grades for <%= @coursename %> in the <%= @semester %> semester below.</h1>
+  </div>
+</div>
+
+<div class="StudentList">
+  <div class="container">
+    <% @students.each do |student| %>
+      <div class="student">
+        <%= student['name'] + ": " + student['grade'] %>
+      </div>
+    <% end %>
+  </div>
+</div>

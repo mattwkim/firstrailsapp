@@ -1,0 +1,1 @@
+A simple rails app that allows a teacher to view their course roster/enrolled students and their grades, students to view their GPA for a semester as well as classes with grades, and an administrator to view all enrollment counts for all classes in a semester as well as an average grade for a class.

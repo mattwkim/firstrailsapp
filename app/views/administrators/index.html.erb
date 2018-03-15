@@ -1,0 +1,15 @@
+<div class="main">
+  <div class="container">
+    <h1>Welcome to the main administrator page!</h1>
+  </div>
+</div>
+
+<div class="Administrators">
+  <div class="container">
+    <% @administrators.each do |administrator| %>
+      <div class="administrator">
+        <%= link_to administrator.name, 'administrator/' + administrator.name %>
+      </div>
+    <% end %>
+  </div>
+</div>

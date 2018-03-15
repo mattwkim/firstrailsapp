@@ -1,0 +1,15 @@
+<div class="main">
+  <div class="container">
+    <h1><%= @studentname %>, all semesters you have taken or are currently enrolled in classes for below.</h1>
+  </div>
+</div>
+
+<div class="Students">
+  <div class="container">
+    <% @semesters.each do |semester| %>
+      <div class="semester">
+        <%= link_to semester.semester, @studentname + "/" + semester.semester %>
+      </div>
+    <% end %>
+  </div>
+</div> 

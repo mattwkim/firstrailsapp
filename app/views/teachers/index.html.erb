@@ -1,0 +1,15 @@
+<div class="main">
+  <div class="container">
+    <h1>Welcome to the main teacher page!</h1>
+  </div>
+</div>
+
+<div class="Teachers">
+  <div class="container">
+    <% @teachers.each do |teacher| %>
+      <div class="teacher">
+        <%= link_to teacher.name, 'teacher/' + teacher.name %>
+      </div>
+    <% end %>
+  </div>
+</div>

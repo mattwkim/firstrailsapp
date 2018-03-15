@@ -1,0 +1,15 @@
+<div class="main">
+  <div class="container">
+    <h1><%= @administratorname %>, welcome to your administrator page!</h1>
+  </div>
+</div>
+
+<div class="Administrators">
+  <div class="container">
+    <% @semesters.each do |semester| %>
+      <div class="semester">
+        <%= link_to semester.semester, @administratorname + "/" + semester.semester %>
+      </div>
+    <% end %>
+  </div>
+</div>

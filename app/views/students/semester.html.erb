@@ -1,0 +1,19 @@
+<div class="main">
+  <div class="container">
+    <h1>All grades for the <%= @currentsemester %> below.</h1>
+  </div>
+</div>
+
+<div class="Students">
+  <div class="container">
+    <% @courseinformation.each do |courseinfo| %>
+      <div class="grades">
+        <p><%= courseinfo['name'] %>: <%= courseinfo['grade'] %></p>
+      </div>
+    <% end %>
+  </div>
+</div>
+
+<div class="container">
+  <p> Your GPA for the semester is: <%= @semestergpa %> </p>
+</div>
